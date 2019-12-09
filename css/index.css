@@ -1,3 +1,386 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+body {
+    padding: 0 30px;
+    margin: auto;
+}
+
+.container {
+    width: 900px;
+    margin: auto;
+}
+
+h1,
+h2 {
+    font-size: 2em;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid black;
+}
+
+header nav {
+    display: flex;
+    margin-top: 30px;
+    position: fixed;
+}
+
+header nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover {
+    font-size: 125%;
+}
+
+header img.logo {
+    padding-top: 20px;
+    margin-left: 60%;
+    position: fixed;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+.cta .left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.cta>img {
+    display: flex;
+}
+
+
+.cta h1 {
+    font-size: 60px;
+    width: 65%;
+    padding-bottom: 10px;
+    margin-left: 20px;
+}
+
+.cta a {
+    text-decoration: none;
+    color: gray;
+}
+
+.cta h2 {
+    color: gray;
+    padding: 10px;
+    border: 2px solid grey;
+    margin: 20px;
+    text-align: center;
+    width: 70%;
+}
+
+.main-content {
+    padding: 20px 0;
+    margin: 0 30px;
+}
+
+.top-portion {
+    display: flex;
+}
+
+.bottom-portion {
+    display: flex;
+}
+
+.features,
+.about {
+    width: 40%;
+}
+
+.about {
+    margin-left: 110px;
+}
+
+.middle-img {
+    margin: 40px 0;
+    width: 100%;
+}
+
+.services,
+.product,
+.vision {
+    /* display: inline-block; */
+    width: 27%;
+    margin: 0 10px;
+
+}
+
+.services-header-img {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    width: 880px;
+}
+
+.offerings {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+
+.digital-design,
+.ui,
+.digital-marketing,
+.web-development,
+.ios-development,
+.android-development {
+    display: flex;
+    flex-flow: column wrap;
+    background: lightgray;
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.learn-more {
+    background: white;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid black;
+    text-align: center;
+    width: 150px;
+    border-radius: 5px;
+}
+
+.learn-more:hover {
+    background: lightsalmon;
+    transform: scale(1.2);
+}
+
+.part-one,
+.part-two,
+.part-three {
+    display: flex;
+}
+
+.service-facts {
+    padding-right: 30px;
+}
+
+li.services {
+    list-style-type: square;
+    padding: 10px 10px 10px 0px;
+}
+
+.list-items {
+    padding-top: 20px;
+}
+
+.bottom {
+    display: flex;
+    padding-top: 30px;
+}
+
+
+
+.contact {
+    padding-top: 50px;
+    margin: 0 30px;
+}
+
+.phone,
+.email {
+    padding-top: 20px;
+}
+
+footer {
+    padding-top: 40px;
+    text-align: center;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 420px) {
+
+    .part-one,
+    .part-two,
+    .part-three {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .services-info-img,
+    .service-facts {
+        display: none;
+    }
+}
